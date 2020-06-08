@@ -53,6 +53,7 @@ def altercopy():
                     print(lastword)
                     # strBuff.replace('\r\n', '',1)    #死循环
                     strBuff = strBuff.replace('\r\n', '', 1)  # 断词换行
+            pyperclip.copy(strBuff)
             tempBuff = strBuff  # 避免循环
 
 altercopy()
